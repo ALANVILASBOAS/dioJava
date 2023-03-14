@@ -6,9 +6,7 @@ public class PrimeiroPrograma {
     public static void main(String[] args) {
         int a = 5, b = 3;
 
-        Livro livro = new livro(nome;: "Dragões de Éter", numPagina:300);
-        System.out.println(livro5);
-
+        Livro livro = new Livro("Dragões", 300);
         Gato gato = new Gato();
 
         System.out.println("Hello word!" + (a + b));
@@ -17,15 +15,19 @@ public class PrimeiroPrograma {
 
 }
 
-
-class livro{
+class Livro {
     private String nome;
-    private Integer numPagina;
+    private Integer numPaginas;
 
-    public livro(String nome, Integer numPagina) {
+
+    //Constructor:
+
+    public Livro(String nome, Integer numPaginas) {
         this.nome = nome;
-        this.numPagina = numPagina;
+        this.numPaginas = numPaginas;
     }
+
+    //Getter and Setters
 
     public String getNome() {
         return nome;
@@ -35,19 +37,21 @@ class livro{
         this.nome = nome;
     }
 
-    public Integer getNumPagina() {
-        return numPagina;
+    public Integer getNumPaginas() {
+        return numPaginas;
     }
 
-    public void setNumPaginas(Integer numPagina) {
-        this.numPagina = numPagina;
+    public void setNumPaginas(Integer numPaginas) {
+        this.numPaginas = numPaginas;
     }
 
+
+    //toString
     @Override
     public String toString() {
-        return "livro{" +
+        return "Livro{" +
                 "nome='" + nome + '\'' +
-                ", numPaginas=" + numPagina +
+                ", numPaginas=" + numPaginas +
                 '}';
     }
 }
