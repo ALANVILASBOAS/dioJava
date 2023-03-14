@@ -6,7 +6,7 @@ public class PrimeiroPrograma {
     public static void main(String[] args) {
         int a = 5, b = 3;
 
-        Livro livro = new livro(nome;: "Dragões de Éter", numPaginas:300);
+        Livro livro = new livro(nome;: "Dragões de Éter", numPagina:300);
         System.out.println(livro1);
 
         Gato gato = new Gato();
@@ -20,11 +20,11 @@ public class PrimeiroPrograma {
 
 class livro{
     private String nome;
-    private Integer numPaginas;
+    private Integer numPagina;
 
-    public livro(String nome, Integer numPaginas) {
+    public livro(String nome, Integer numPagina) {
         this.nome = nome;
-        this.numPaginas = numPaginas;
+        this.numPagina = numPagina;
     }
 
     public String getNome() {
@@ -35,19 +35,19 @@ class livro{
         this.nome = nome;
     }
 
-    public Integer getNumPaginas() {
-        return numPaginas;
+    public Integer getNumPagina() {
+        return numPagina;
     }
 
-    public void setNumPaginas(Integer numPaginas) {
-        this.numPaginas = numPaginas;
+    public void setNumPaginas(Integer numPagina) {
+        this.numPagina = numPagina;
     }
 
     @Override
     public String toString() {
         return "livro{" +
                 "nome='" + nome + '\'' +
-                ", numPaginas=" + numPaginas +
+                ", numPaginas=" + numPagina +
                 '}';
     }
 }
